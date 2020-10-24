@@ -10,6 +10,17 @@ def subtraction(a, b):
     return b - a
 
 
+def multiplication(a, b):
+    a = int(a)
+    b = int(b)
+    return a * b
+
+def division(a, b):
+    a = int(a)
+    b = int(b)
+    return round(b / a, 9)
+
+
 class Calculator:
     result = 0
 
@@ -24,6 +35,10 @@ class Calculator:
         self.result = addition(a, b)
         return self.result
 
-    def multiplication(self, a, b):
+    def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
