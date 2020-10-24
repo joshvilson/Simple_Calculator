@@ -1,32 +1,21 @@
-import math
-
 def addition(a, b):
-    a = int(a)
-    b = int(b)
-    return b + a
+    return int(b) + int(a)
 
 
 def subtraction(a, b):
-    a = int(a)
-    b = int(b)
-    return b - a
+    return int(b) - int(a)
 
 
 def multiplication(a, b):
-    a = int(a)
-    b = int(b)
-    return a * b
+    return int(a) * int(b)
 
 
 def division(a, b):
-    a = float(a)
-    b = float(b)
-    return round(b / a, 9)
+    return round(float(b) / float(a), 9)
 
 
 def square(a):
-    a = int(a)
-    return a * a
+    return int(a) * int(a)
 
 
 def square_root(a):
