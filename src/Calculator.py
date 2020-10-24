@@ -15,10 +15,16 @@ def multiplication(a, b):
     b = int(b)
     return a * b
 
+
 def division(a, b):
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     return round(b / a, 9)
+
+
+def square(a):
+    a = int(a)
+    return a * a
 
 
 class Calculator:
@@ -41,4 +47,8 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
         return self.result
