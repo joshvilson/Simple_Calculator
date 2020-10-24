@@ -1,18 +1,13 @@
 def addition(a, b):
     a = int(a)
     b = int(b)
-    return a + b
+    return b + a
 
 
 def subtraction(a, b):
     a = int(a)
     b = int(b)
     return b - a
-
-def multiplication(a, b):
-    a = int(a)
-    b = int(b)
-    return a * b
 
 
 class Calculator:
@@ -21,12 +16,12 @@ class Calculator:
     def __init__(self):
         pass
 
-    def add(self, a, b):
-        self.result = addition(a, b)
-        return self.result
-
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def add(self, a, b):
+        self.result = addition(a, b)
         return self.result
 
     def multiplication(self, a, b):

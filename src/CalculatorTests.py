@@ -4,6 +4,7 @@ from Calculator import Calculator
 from CsvReader import CsvReader
 from pprint import pprint
 
+
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = Calculator()
@@ -23,9 +24,15 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
     def test_subtraction(self):
-        test_data = CsvReader('/src/Unit Test Subtraction.csv').data
-        for row in test_data:
+        test_data_subtract = CsvReader('/src/Unit Test Subtraction.csv').data
+        for row in test_data_subtract:
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
+
+    def test_addition(self):
+        test_data_add = CsvReader('/src/Unit Test Addition.csv').data
+        for row in test_data_add:
+            self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
 
