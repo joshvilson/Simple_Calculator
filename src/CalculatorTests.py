@@ -32,6 +32,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.divide(5, 10), 2)
         self.assertEqual(self.calculator.result, 2)
 
+    def test_square_method_calculator(self):
+        self.assertEqual(self.calculator.square(5), 25)
+        self.assertEqual(self.calculator.result, 25)
+
     # Unit tests testing individual csv files
 
     def test_subtraction(self):
