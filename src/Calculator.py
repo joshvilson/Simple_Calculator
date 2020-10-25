@@ -19,12 +19,7 @@ def square(a):
 
 
 def square_root(a):
-    a = int(a) ** 0.5
-    if a > 10:
-        a = round(a, 8)
-    else:
-        a = round(a, 9)
-    return a
+    return round(int(a) ** 0.5, 8)
 
 
 class Calculator:

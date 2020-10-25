@@ -1,4 +1,5 @@
 import unittest
+import math
 
 from Calculator import Calculator
 from CsvReader import CsvReader
@@ -56,8 +57,8 @@ class MyTestCase(unittest.TestCase):
     def test_square_root(self):
         test_data_square_root = CsvReader('/src/Unit Test Square Root.csv').data
         for row in test_data_square_root:
-            self.assertEqual(self.calculator.square_root(row['Value 1']), float(row['Result']))
-            self.assertEqual(self.calculator.result, float(row['Result']))
+            self.assertEqual(round(self.calculator.square_root(row['Value 1']), 8), round(float(row['Result']), 8))
+            self.assertEqual(round(self.calculator.result, 8), round(float(row['Result']), 8))
 
 
 if __name__ == '__main__':
