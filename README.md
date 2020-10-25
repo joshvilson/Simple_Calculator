@@ -1,2 +1,2 @@
-# calculator-project for IS 601
+# calculator-project
 # Josh Vilson
