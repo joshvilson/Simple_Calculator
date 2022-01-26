@@ -1,1 +1,1 @@
-Simple calculator developed using Python that performs basic mathematical operations such as addition, substraction, multiplication, division, square, and square root.
+Simple calculator developed using Python that performs basic mathematical operations such as addition, substraction, multiplication, division, square, and square root. Reads input from various CVS files and deployed with docker.
